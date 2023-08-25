@@ -96,5 +96,5 @@ function App() {
 ## Author
 
 - Github - [morcicek](https://github.com/morcicek)
-- Linkedin - [Mehmet Cevat Morcicek](linkedin.com/in/mehmet-cevat-morcicek-b50a29178)
+- Linkedin - [Mehmet Cevat Morcicek](https://linkedin.com/in/mehmet-cevat-morcicek-b50a29178)
 - Twitter - [@morcicek_m](https://twitter.com/morcicek_m)
