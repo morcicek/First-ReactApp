@@ -41,33 +41,60 @@ I learned essential parts of responsive design at this challenge.Also I reinrorc
 To see how you can add code snippets, see below:
 
 ```html
-<div class="main-right">
-  <h2 class="main-right_title">New</h2>
-  <div class="main-right_subtitle">
-    <a href="#">Hydrogen VS Electric Cars</a>
-    <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
-  </div>
-</div>
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
 ```
 
-```css
-.main-right {
-  width: 60rem;
-  padding: 2rem;
-  background-color: hsl(240, 100%, 5%);
-  color: hsl(36, 100%, 99%);
-}
+```Sass
+@import './reset', './variables';
+
+body {
+  background-color: $backgrounColor;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+    }
+```
+
+```React-JSX
+function App() {
+  const [index, setIndex] = useState(0);
+  const [showMore, setShowMore] = useState(false);
+  const handleNext = () => {
+    hasNext && setIndex(index + 1);
+  };
+  return (
+    <div className="container">
+      <h2>
+        {sculpture.name} by {sculpture.artist}
+      </h2>
+      <div className="buttons">
+        <button onClick={handlePrev} className="btn btn-secondary">
+          Prev
+        </button>
+    </div>
 ```
 
 ### Continued development
 
 - Responsive Design
 - Sass
+- React
 
 ### Useful resources
+
+- [React Documentation](https://react.dev/)
+- [Sass Basics](https://sass-lang.com/guide/)
 
 ## Author
 
 - Github - [morcicek](https://github.com/morcicek)
-- Frontend Mentor - [@morcicek](https://www.frontendmentor.io/profile/morcicek)
+- Linkedin - [Mehmet Cevat Morcicek](linkedin.com/in/mehmet-cevat-morcicek-b50a29178)
 - Twitter - [@morcicek_m](https://twitter.com/morcicek_m)
