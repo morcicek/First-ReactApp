@@ -47,7 +47,7 @@ To see how you can add code snippets, see below:
 </body>
 ```
 
-```Sass
+```scss
 @import './reset', './variables';
 
 body {
@@ -63,7 +63,7 @@ body {
     }
 ```
 
-```React-JSX
+```jsx
 function App() {
   const [index, setIndex] = useState(0);
   const [showMore, setShowMore] = useState(false);
