@@ -18,7 +18,7 @@ function App() {
   };
 
   const handleMoreClick = () => {
-    setShowMore(true);
+    setShowMore(!showMore);
   };
 
   let hasPrev = index > 0;
@@ -40,7 +40,7 @@ function App() {
       </div>
       <img src={sculpture.url} alt={sculpture.alt} />
       <button onClick={handleMoreClick} className="btn btn-detail">
-        Show Details
+        {showMore ? 'Hide' : 'Show'} Details
       </button>
       <p>{showMore && sculpture.description}</p>
     </div>
